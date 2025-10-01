@@ -1,0 +1,48 @@
+/* Applies to whole page */
+body {
+    background-color: #050E11;
+    font-family: "Comic Sans MS";
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+/* A horizontal line that fades out at the edges */
+.fadeLine { 
+    display:block;
+    border:none;
+    color:#050E11;
+    height:1px;
+    background:#1F5567;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 1000, from(#1F5567), to(#050E11));
+}
+
+#bouncer {
+    position: absolute;
+    left: 500px;
+    top: 500px;
+}
+
+
+.ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: cyan;
+    animation-name: ballDisappear;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes ballDisappear {
+    from {}
+    to {
+        background-color: white;
+        width: 0px;
+        height: 0px;
+    }
+    
+}
